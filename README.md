@@ -7,7 +7,8 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Last Updated](https://img.shields.io/badge/Last_Updated-July_2026-informational)
 
-**Author:** IT SPECIALIST | CLOUD INFRASTRUCTURE & AI AUTOMATION ENGINEER
+**Author:** Imon Mahmud. 
+IT SPECIALIST | CLOUD INFRASTRUCTURE & AI AUTOMATION ENGINEER
 
 ## Executive Summary
 This repository contains the Infrastructure as Code (IaC) and automation scripts for an enterprise-grade Continuous Configuration platform. Leveraging AWS Systems Manager (SSM) and Terraform, this project provisions a strictly isolated EC2 fleet that adheres to a rigorous **Zero Trust Architecture**. The entire platform was designed, deployed, validated, and documented autonomously.
