@@ -1,0 +1,9 @@
+schemaVersion: '2.2'
+description: "Install and configure CloudWatch Agent"
+mainSteps:
+- action: aws:runShellScript
+  name: installCWAgent
+  inputs:
+    runCommand:
+    - "dnf install -y amazon-cloudwatch-agent"
+    - "/opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c default"

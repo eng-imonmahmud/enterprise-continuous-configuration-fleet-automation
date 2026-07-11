@@ -1,0 +1,12 @@
+schemaVersion: '2.2'
+description: "Install and configure Nginx"
+mainSteps:
+- action: aws:runShellScript
+  name: installNginx
+  inputs:
+    runCommand:
+    - "dnf install -y nginx"
+    - "systemctl enable nginx"
+    - "systemctl start nginx"
+    - "mkdir -p /var/www/html/app"
+    - "echo '<html><body><h1>Enterprise Continuous Configuration & Fleet Automation</h1><p>Managed by AWS Systems Manager</p></body></html>' > /var/www/html/index.html"
